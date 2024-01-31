@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.bg-section{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://colorlib.com/etc/bforms/colorlib-booking-1/img/background.jpg"); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.bg-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 23, 194, 0.4); /* Màu trắng với độ mờ 0.5 */
+    z-index: 2; /* Đặt z-index để nó nằm dưới background chính */
+}
+
+.custom-bg{
+    background-color:#ebecee;
+}
+
+.custom-color{
+    color: #FA7436;
+}
+
+.custom-btn{
+    background-color: #FA7436;
+    color: #fff;
+}
+
+.section-center{
+    z-index: 10;
+}
+
+.custom-gap {
+    gap: 20px; 
+  }
+
+.custom-navbar{
+    position: absolute;
+    z-index: 11;
+    width: 100vw;
+    top: 0;
+    height: 150px;
+    color: #fff;
+}
